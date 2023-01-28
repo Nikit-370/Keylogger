@@ -1,6 +1,6 @@
 ### Keylogger
 - This should be used for only education purpose.
-- Please use this as an Ethical Way.
+- Please use this in Ethical Way.
 
 ### Pre-requisites:
 - Windows, Linux or Mac
